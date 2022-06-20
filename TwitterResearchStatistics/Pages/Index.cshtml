@@ -1,0 +1,27 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+@section head {
+        <!-- Refresh page every 5 seconds -->
+        <meta http-equiv="refresh" content="5">
+}
+
+<div class="text-center">
+    <h1 class="display-4">Twitter Sample Feed Statistics</h1>
+
+    <div>
+        <p>Total Tweets Received: @Model.TotalTweetCount</p>
+        <p>Top 10 Most Popular Tweets:</p>
+        <ol>
+            @{
+                foreach (var tweet in Model.TopTweets)
+                {
+                    <li><span>Id: @tweet.Id</span><span style="margin-left: 15px;">Rank: @tweet.Rank</span></li>
+                }
+            }
+        </ol>
+    </div>
+</div>

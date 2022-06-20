@@ -1,0 +1,34 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>net6.0</TargetFramework>
+    <Nullable>enable</Nullable>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <UserSecretsId>b9f1bb86-fffb-4158-8983-d59bfa3b3916</UserSecretsId>
+    <Copyright>Brad Steiner</Copyright>
+    <Description>Sample project to display statistics of sample Twitter feed results</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Dapper" Version="2.0.123" />
+    <PackageReference Include="Dapper.Extensions.SQLite" Version="4.0.4" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Sqlite" Version="6.0.6" />
+    <PackageReference Include="Microsoft.Extensions.ApiDescription.Client" Version="6.0.6">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Newtonsoft.Json" Version="13.0.1" />
+    <PackageReference Include="NSwag.ApiDescription.Client" Version="13.16.1">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Quartz.AspNetCore" Version="3.4.0" />
+    <PackageReference Include="Quartz.Extensions.DependencyInjection" Version="3.4.0" />
+    <PackageReference Include="Quartz.Extensions.Hosting" Version="3.4.0" />
+    <PackageReference Include="Quartz.Serialization.Json" Version="3.4.0" />
+    <PackageReference Include="Serilog" Version="2.11.0" />
+    <PackageReference Include="Serilog.Sinks.Console" Version="4.0.1" />
+    <PackageReference Include="TweetinviAPI" Version="5.0.4" />
+  </ItemGroup>
+
+</Project>
